@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-6">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrito de compras</title>
+
+	<link rel="stylesheet" href="css/menu.css">
+	<link rel="shortcut icon" type= "image/x-icon" href= "img/ico2.ico">
+    <link rel="stylesheet" href="icon/style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+    <meta name="robots" content="noindex,follow" />
+	
+  </head>
+  <body>
+   <!---Menu horizontal-->
+     <div id="c-slider">
+		<header>
+		 <div class="contenedor">
+			  <a href="Principal.html">
+			   <img src = "img/banner2.png">
+			  </a>
+			  
+		  <form action="buscar.html" method="POST">  
+			  <input type="text" placeholder=" &#128269; Buscar...">
+			  <input type="submit"  value="Buscar" style="position:absolute; left: 26%; width: 80px;">
+          </form>
+		  
+		 </div>
+		 	
+		 <div class="container">
+			<a href="Usuario.html">
+			  <img src = "img/1.png" class="avatar"  width="70px" height="70px" style="top:-10px;"/>
+			</a>
+			
+			<a href="carrito.html">
+			  <img src = "img/13.png" class="shop"  width="50px" height="45px"/>
+			</a>
+			
+			<a href="agregar_producto.html">
+			  <img src = "img/icon3.png" class="add_p"  width="50px" height="45px"/>
+			</a>
+			
+			<a href="index.php">
+			  <img src = "img/icon_140-1.png" class="add_p"  width="45px"  style="left:1400px;"/>
+			</a>
+			
+			</div>
+	    </header>
+	</div>
+	
+	 <!-- Carrito de compras -->
+		<div class="shopping-cart">
+		  <!-- Title -->
+		  <div class="title">
+			Carrito
+		  </div>
+
+		  <!-- Product #1 -->
+		  <div class="item">
+			<div class="buttons">
+			  <span class="delete-btn"></span>
+			</div>
+
+			<div class="image">
+			  <img src="img/s-1.jpg" height="150" />
+			</div>
+
+			<div class="description">
+			  <span>Vestido cafe</span>
+			  <span>Bball High</span>
+			  <span>White</span>
+			</div>
+
+			<div class="quantity">
+			  <button class="plus-btn" type="button" name="button">
+				<img src="icon/plus.svg" alt="" />
+			  </button>
+			  <input type="text" name="name" value="1">
+			  <button class="minus-btn" type="button" name="button">
+				<img src="icon/minus.svg" alt="" />
+			  </button>
+			</div>
+
+			<div class="total-price">$549</div>
+		  </div>
+
+		  <!-- Product #2 -->
+		  <div class="item">
+			<div class="buttons">
+			  <span class="delete-btn"></span>
+			</div>
+
+			<div class="image">
+			  <img src="img/s-2.jpg" height="150"/>
+			</div>
+
+			<div class="description">
+			  <span>Vestido azul</span>
+			  <span>Future Sneakers</span>
+			  <span>White</span>
+			</div>
+
+			<div class="quantity">
+			  <button class="plus-btn" type="button" name="button">
+				<img src="icon/plus.svg" alt="" />
+			  </button>
+			  <input type="text" name="name" value="1">
+			  <button class="minus-btn" type="button" name="button">
+				<img src="icon/minus.svg" alt="" />
+			  </button>
+			</div>
+
+			<div class="total-price">$870</div>
+		  </div>
+
+		  <!-- Product #3 -->
+		  <div class="item">
+			<div class="buttons">
+			  <span class="delete-btn"></span>
+			</div>
+
+			<div class="image">
+			  <img src="img/s-3.jpg" height="150" />
+			</div>
+
+			<div class="description">
+			  <span>Vestido rojo</span>
+			  <span>Brushed Scarf</span>
+			  <span>Brown</span>
+			</div>
+
+			<div class="quantity">
+			  <button class="plus-btn" type="button" name="button">
+				<img src="icon/plus.svg" alt="" />
+			  </button>
+			  <input type="text" name="name" value="1">
+			  <button class="minus-btn" type="button" name="button">
+				<img src="icon/minus.svg" alt="" />
+			  </button>
+			</div>
+
+			<div class="total-price">$349</div>
+		  </div>
+		  
+		  <div>
+		    <div class="total-price" style="position:relative; left:550px; font-size: 22px;">Total= </div>
+			<br/>
+		  </div>
+		</div>
+		
+		<div class="forma-pago" style="position:absolute; left:550px;"> 
+			<label>Formas de pago: </label>
+			
+			<br/>
+			<br/>
+			<input type="radio" name="gender" id="myCheckbox" />
+            <label for="myCheckbox"> 
+			<img src="icon/f1.png" alt="" height="50px" style="padding-left: 20px;" />
+			</label>
+			
+			<input type="radio" name="gender" id="myCheckbox2" />
+            <label for="myCheckbox2"> 
+				<img src="icon/f2.png" alt="" height="50px" style="padding-left: 20px;"/>
+            </label>
+			
+			<input type="radio" name="gender" id="myCheckbox3" />
+            <label for="myCheckbox3"> 
+				<img src="icon/f3.png" alt="" height="50px" style="padding-left: 20px;"/>
+			</label>
+			
+		</div>
+		
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		
+		<a href="valoracion.html"><input type="submit" value="Comprar"/></a> 
+		
+		<br/>
+		<br/>
+	
+    <!--Borrar producto? -->
+	
+	<script>
+	$( ".delete-btn" ).click(function() {
+      var answer = confirm("Seguro que no deseas comprar este producto");
+	  
+      if (answer) {
+	  $(this).parents('.item').slideUp();
+	  }
+	});
+	</script>
+	
+	<!-- Incrementar productos -->
+    <script type="text/javascript">
+      $('.minus-btn').on('click', function(e) {
+    		e.preventDefault();
+    		var $this = $(this);
+    		var $input = $this.closest('div').find('input');
+    		var value = parseInt($input.val());
+
+    		if (value > 1) {
+    			value = value - 1;
+    		} else {
+    			value = 0;
+    		}
+
+        $input.val(value);
+
+    	});
+
+    	$('.plus-btn').on('click', function(e) {
+    		e.preventDefault();
+    		var $this = $(this);
+    		var $input = $this.closest('div').find('input');
+    		var value = parseInt($input.val());
+
+    		if (value < 100) {
+      		value = value + 1;
+    		} else {
+    			value =100;
+    		}
+
+    		$input.val(value);
+    	});
+
+      $('.like-btn').on('click', function() {
+        $(this).toggleClass('is-active');
+      });
+    </script>
+  </body>
+</html>

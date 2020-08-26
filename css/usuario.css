@@ -1,0 +1,41 @@
+.informacion
+	{
+	  position:relative;
+	  left:250px;
+	}
+	
+	.historial
+	{
+	  position:relative;
+	  text-align:center;
+	 
+	}
+	.Contenido
+	{
+    	position:relative;
+	    top:30px;
+		left:25%;
+	    width: 800px;
+		border: 2px solid pink;
+		border-radius: 12px;
+	}
+	.Contenido p
+	{
+	font-size:20px;
+	 text-align:center;
+	}
+	
+	.c_contenido
+	{
+	  font-family: 'Playfair Display', serif;
+	}
+	
+	
+	label {
+	  color: grey;
+	}
+
+
+    .checked {
+    color: orange;
+    }

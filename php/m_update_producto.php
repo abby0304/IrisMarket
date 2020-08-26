@@ -1,0 +1,82 @@
+<?php
+include 'Conexion.php';
+session_start();
+
+$id_usuario = $_SESSION['Usuario'];
+
+//POST guardar datos de la pagina
+$nombre_a = mysqli_real_escape_string($conexion, $_POST['articulo']);
+$descripcion_a = mysqli_real_escape_string($conexion, $_POST['descripcion']);
+$precio_a = mysqli_real_escape_string($conexion, $_POST['precio']);
+$unidades_a = mysqli_real_escape_string($conexion, $_POST['unidades']);
+$oferta_a = mysqli_real_escape_string($conexion, $_POST['oferta']);
+$categoria_a = mysqli_real_escape_string($conexion, $_POST['categoria']);
+$id_a = mysqli_real_escape_string($conexion, $_POST['id_a']);
+$id_m = mysqli_real_escape_string($conexion, $_POST['id_m']);
+$id_ca = mysqli_real_escape_string($conexion, $_POST['id_ca']);
+
+$publicar_a = 0;
+if(isset($_POST['publicar']))
+{
+$publicar_a = 1;
+}
+
+
+//Pasar cambio de dato
+//$precio_a = number_format((float)$precio_a, 2, '.', '');
+
+//Mandar las fotos a la bases de datos 
+$name_f1 = mysqli_real_escape_string($conexion,file_get_contents($_FILES['foto1']['tmp_name']));
+
+$name_f2 = mysqli_real_escape_string($conexion,file_get_contents($_FILES['foto2']['tmp_name']));
+
+$name_f3 = mysqli_real_escape_string($conexion,file_get_contents($_FILES['foto3']['tmp_name']));
+
+
+///Video guardarlo en la carpeta
+$name_v1 = mysqli_real_escape_string($conexion,$_FILES['video']['name']);
+
+$name_vtotal= mysqli_real_escape_string($conexion,rand(0,1000)."$name_v1");
+
+$ruta='C:/xampp/htdocs/Proyecto_BDM/video';
+
+move_uploaded_file($_FILES['video']['tmp_name'], "$ruta/"."$name_vtotal");
+
+//Guardar informacion multimedia
+$consulta="CALL Multimedia_Procedius(2,".$id_m.",'".$name_vtotal."','".$name_f1."','".$name_f2."','".$name_f3."', 1)";
+
+$resultado= mysqli_query($conexion, $consulta);
+
+mysqli_close($conexion);
+include 'Conexion.php';
+
+$consulta2= "CALL Articulo_Procedius(2, ".$id_a.", '".$nombre_a."', '".$descripcion_a."',
+ ".$precio_a." , ".$unidades_a.", 0, 0, ".$publicar_a.", ".$oferta_a.", ". $id_usuario ." , ".$id_m.",1)";
+ 
+
+$resultado=$conexion->query($consulta2);
+
+mysqli_close($conexion);
+include 'Conexion.php';
+
+//Guardar categoria
+$consulta3 = "CALL Cate_Art_Procedius(2,".$id_a.",1, ".$id_m.",$categoria_a)";
+
+$resultado= mysqli_query($conexion, $consulta3);
+
+
+if($resultado)
+{
+	header("location:../Principal.php");
+}
+else
+{
+	echo'<script type="text/javascript">
+    alert("No se pudo guardar");
+    </script>';
+
+}
+
+
+mysqli_close($conexion);
+?>

@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: white;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+}
+
+.galeria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.galeria__item {
+  width: 80%;
+  cursor: pointer;
+}
+@media (min-width:480px) {
+  .galeria__item {
+    width: 20%;
+    margin: 5px;
+  }
+}
+@media (min-width:768px) {
+  .galeria__item {
+    width: 10%;
+  }
+}
+@media (min-width:1024px) {
+  .galeria__item {
+    width: 20%;
+    margin: 10px;
+  }
+}
+

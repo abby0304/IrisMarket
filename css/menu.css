@@ -1,0 +1,146 @@
+
+.container, .button, .nav{
+    position: absolute;
+}
+
+.container{
+    margin: auto;
+    top: 20%;
+    left: 3%;
+    margin-left: -10px;
+}
+
+.container label
+{
+	 text-align: center;
+     font-size: 20px;
+	padding: 10px;
+}
+
+#toggle{
+    display: none;
+}
+
+.button{
+    z-index: 999;
+    width: 43px;
+    height: 43px;
+    background: #f28482;
+    border-radius: 100%;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.3);
+    cursor: pointer;
+}
+
+
+.nav{
+    transform: translateY(-10%);
+    opacity: 0;
+    top: 10px;
+    left: -30px;
+    transition: all 0.5s ease-in-out;
+    background: white;
+    width: 150px;
+    border-radius: 5px;
+    transform: translateY(0%);
+    box-shadow: 2px 3px 10px 0 rgba(0,0,0,0.1);
+}
+
+.nav a{
+    text-align: center;
+    display: block;
+    margin: 20px 0;
+    color: #f28482;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 300ms;
+}
+
+.nav a:hover{
+    color: #5f5f5f;
+}
+
+#toggle:checked ~ .nav{
+    opacity: 1;
+    transform: translateY(10%);
+}
+
+#toggle:checked ~ .button{
+    transform: rotate(180deg);
+    box-shadow: 0 0 0 0 transparent;
+}
+
+
+/*Menu Horizontal*/
+
+header
+{
+	width:100%;
+	height: 90px;
+	background: #D786A3;
+	color: #fff;
+	
+	/*para que sea estatico el menu*/
+	position:fixed;
+	top:0;
+	left:0;
+	z-index:100;
+}
+
+.contenedor
+{
+	width:98%;
+	margin:auto;
+}
+
+.contenedor img
+{
+	position: absolute;
+	right:45%;
+}
+
+.contenedor input
+{
+	position: absolute;
+    border: 2px solid #ccc;	
+	border-radius: 4px;
+	font-size: 16px;
+	left: 10%;
+	color:black;
+	bottom: 30%; 
+	padding: 10px;
+	box-shadow: 1px 3px 10px 0 rgba(0,0,0,0.3);
+}
+
+
+.contenedor p
+{
+	position: absolute;
+	bottom: 30%; 
+	left:25px;
+	font-size: 40px;
+}
+
+.avatar
+{
+	position: absolute;
+	left:1300px;
+    border-radius:60%;
+}
+
+.shop
+{
+	position: absolute;
+	left:1230px;
+	top:3px;
+}
+
+.add_p
+{
+	position: absolute;
+	left:1170px;
+	top:3px;
+}
+

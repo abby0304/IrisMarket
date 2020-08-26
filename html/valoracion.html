@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-6">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Valoracion</title>
+
+	<link rel="stylesheet" href="css/menu.css">
+	
+	<link rel="shortcut icon" type= "image/x-icon" href= "img/ico2.ico">
+    <link rel="stylesheet" href="icon/style.css" media="screen" title="no title" charset="utf-8">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" charset="utf-8"></script>
+    <meta name="robots" content="noindex,follow" />
+	
+	
+	<style>
+	 .clasificacion
+	{
+	 position: relative;
+	   right: 50%;
+	}
+	input[type="radio"] {
+	  display: none;
+	}
+
+	label {
+	  color: grey;
+	}
+
+	.clasificacion {
+	  direction: rtl;
+	  unicode-bidi: bidi-override;
+	}
+
+	label:hover,
+	label:hover ~ label {
+	  color: orange;
+	}
+
+	input[type="radio"]:checked ~ label {
+	  color: orange;
+	}
+
+    .checked {
+    color: orange;
+    }
+	</style>
+	
+	<script>
+	$(document).ready(function(){
+		$(".compra").click(function(){
+		 alert("Su compra se realizo con exito!!");
+		});
+	});
+	</script>
+	
+  </head>
+  <body>
+   <!---Menu horizontal-->
+     <div id="c-slider">
+		<header>
+		 <div class="contenedor">
+			  <a href="Principal.html">
+			  <img src = "img/banner2.png">
+			  </a>
+			  <form action="buscar.html" method="POST">  
+			  <input type="text" placeholder=" &#128269; Buscar...">
+			  <input type="submit"  value="Buscar" style="position:absolute; left: 26%; width: 80px;">
+			  </form>
+		 </div>
+		 	
+		 <div class="container">
+			<!--<input type="checkbox" id="toggle">
+			<label for="toggle" class="button"><font color="white">&#8801; </font></label>-->
+			
+			<a href="Usuario.html">
+			  <img src = "img/1.png" class="avatar"  width="70px" height="70px" style="top:-10px;"/>
+			</a>
+			
+			<a href="carrito.html">
+			  <img src = "img/13.png" class="shop"  width="50px" height="45px"/>
+			</a>
+			
+			<a href="agregar_producto.html">
+			  <img src = "img/icon3.png" class="add_p"  width="50px" height="45px"/>
+			</a>
+			
+			<a href="index.php">
+			  <img src = "img/icon_140-1.png" class="add_p"  width="45px"  style="left:1400px;"/>
+			</a>
+			
+
+			<!--<nav class="nav">
+				<a href="#">Vestidos</a>
+				<a href="#">Blusas</a>
+				<a href="#">Pantalon</a>
+				<a href="#">Faldas</a>
+			</nav>-->
+			</div>
+	    </header>
+	</div>
+	
+	 <!-- Carrito de compras -->
+		<div class="shopping-cart">
+		  <!-- Title -->
+		  <div class="title">
+			Ayudanos a mejorar...
+		  </div>
+
+		  <!-- Product #1 -->
+		  <div class="item">
+
+			<div class="image">
+			  <img src="img/s-1.jpg" height="150" />
+			</div>
+
+			<div class="description">
+			  <span>Vestido cafe</span>
+			  <span>Bball High</span>
+			  <span>White</span>
+			</div>
+			
+			
+			<div class="estrellas_s" style="position:relative; left:150px;">
+			<span style="position:relative; right:45px;">Calificacion</span>
+				<p class="clasificacion" style=" font-size: 25px;">
+				<input id="radio1" type="radio" name="estrellas" value="5"><!--
+				--><label for="radio1">★</label><!--
+				--><input id="radio2" type="radio" name="estrellas" value="4"><!--
+				--><label for="radio2">★</label><!--
+				--><input id="radio3" type="radio" name="estrellas" value="3"><!--
+				--><label for="radio3">★</label><!--
+				--><input id="radio4" type="radio" name="estrellas" value="2"><!--
+				--><label for="radio4">★</label><!--
+				--><input id="radio5" type="radio" name="estrellas" value="1"><!--
+				--><label for="radio5">★</label>
+				</p>
+           </div>
+			
+		  </div>
+
+		  <!-- Product #2 -->
+		  <div class="item">
+
+			<div class="image">
+			  <img src="img/s-2.jpg" height="150"/>
+			</div>
+
+			<div class="description">
+			  <span>Vestido azul</span>
+			  <span>Future Sneakers</span>
+			  <span>White</span>
+			</div>
+			
+			
+			<div class="estrellas_s" style="position:relative; left:150px;">
+			<span style="position:relative; right:45px;">Calificacion</span>
+				<p class="clasificacion" style=" font-size: 25px;">
+				<input id="radio6" type="radio" name="estrellas2" value="5"><!--
+				--><label for="radio6">★</label><!--
+				--><input id="radio7" type="radio" name="estrellas2" value="4"><!--
+				--><label for="radio7">★</label><!--
+				--><input id="radio8" type="radio" name="estrellas2" value="3"><!--
+				--><label for="radio8">★</label><!--
+				--><input id="radio9" type="radio" name="estrellas2" value="2"><!--
+				--><label for="radio9">★</label><!--
+				--><input id="radio10" type="radio" name="estrellas2" value="1"><!--
+				--><label for="radio10">★</label>
+				</p>
+           </div>
+
+			
+		  </div>
+
+		  <!-- Product #3 -->
+		  <div class="item">
+
+			<div class="image">
+			  <img src="img/s-3.jpg" height="150" />
+			</div>
+
+			<div class="description">
+			  <span>Vestido rojo</span>
+			  <span>Brushed Scarf</span>
+			  <span>Brown</span>
+			</div>
+			
+			<div class="estrellas_s" style="position:relative; left:150px;">
+			<span style="position:relative; right:45px;">Calificacion</span>
+				<p class="clasificacion" style=" font-size: 25px;">
+				<input id="radio11" type="radio" name="estrellas3" value="5"><!--
+				--><label for="radio11">★</label><!--
+				--><input id="radio12" type="radio" name="estrellas3" value="4"><!--
+				--><label for="radio12">★</label><!--
+				--><input id="radio13" type="radio" name="estrellas3" value="3"><!--
+				--><label for="radio13">★</label><!--
+				--><input id="radio14" type="radio" name="estrellas3" value="2"><!--
+				--><label for="radio14">★</label><!--
+				--><input id="radio15" type="radio" name="estrellas3" value="1"><!--
+				--><label for="radio15">★</label>
+				</p>
+           </div>
+
+			
+		  </div>
+		
+		</div>
+		
+		<a href="principal.html"> <input type="submit" class="compra" value="Siguiente"/> </a>
+		
+		<br/>
+		<br/>
+	
+		<br/>
+		<br/>
+	
+    
+  </body>
+</html>

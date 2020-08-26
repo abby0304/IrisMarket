@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Articulo</title>
+<meta charset="utf-8">
+
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="shortcut icon" type= "image/x-icon" href= "img/ico2.ico">
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+  
+
+    <!--Fuentes-->	 
+   <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Taviraj" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   
+   <!--CSS-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/articulo_css.css">
+
+</head>
+
+<body>
+
+
+
+	<!-- Header -->
+
+ <!---Menu horizontal-->
+     <div id="c-slider">
+		<header>
+		 <div class="contenedor">
+		      <a href="Principal.html">
+			    <img src = "img/banner2.png" >
+			   </a>
+			   <form action="buscar.html" method="POST">
+			  <input type="text" placeholder=" &#128269; Buscar...">
+			  <input type="submit"  value="Buscar" style="position:relative; left: 26%; width: 80px; top:20px; height:40px;">
+			  </form>
+		 </div>
+		 	
+		 <div class="container">
+			<!--<input type="checkbox" id="toggle">
+			<label for="toggle" class="button" ><font color="white">&#8801; </font></label>-->
+			
+			<a href="Usuario.html">
+			  <img src = "img/1.png" class="avatar"  width="70px" height="70px" style="top:-10px;"/>
+			</a>
+			
+			<a href="carrito.html">
+			  <img src = "img/13.png" class="shop"  width="50px" height="45px"/>
+			</a>
+			
+			<a href="agregar_producto.html">
+			  <img src = "img/icon3.png" class="add_p"  width="50px" height="45px"/>
+			</a>
+			
+			<a href="index.php">
+			  <img src = "img/icon_140-1.png" class="add_p"  width="45px"  style="left:1400px;"/>
+			</a>
+
+			<!--<nav class="nav">
+				<a href="#">Vestidos</a>
+				<a href="#">Blusas</a>
+				<a href="#">Pantalon</a>
+				<a href="#">Faldas</a>
+			</nav>-->
+			</div>
+	    </header>
+	</div>
+		
+      <!---Concetenidoo-->
+		<div id="main">
+		 <div class="w3-content w3-section" style="max-width:300px;">
+		  <img class="mySlides w3-animate-fading" src="img/s-3.jpg" style="width:100%">
+		  <img class="mySlides w3-animate-fading" src="img/s-1.jpg" style="width:100%">
+		  <img class="mySlides w3-animate-fading" src="img/s-3.jpg" style="width:100%">
+		  <img class="mySlides w3-animate-fading" src="img/s-2.jpg" style="width:100%">
+		  
+		  <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+          <button class="w3-button w3-display-right" onclick="plusDivs(1)" style="left:29%;" >&#10095;</button>
+		  
+		</div>
+
+		  <div class="Contenido">
+		    <h1 style="color:pink;" align="center">Vestido con encaje rosa</h1>
+			<p>Descripcion:   </p>
+			<p>Categoria:  </p>
+			<p>Precio:  </p>
+			<p>Unidades:  </p>
+			<p>Oferta:  </p>
+			
+			<div class="c_estrella" style="text-align:center;">
+				<span class="checked"> <font size="5"> ★ </font></span>
+				<span class="checked"> <font size="5"> ★ </font></span>
+				<span class="checked"> <font size="5"> ★ </font></span>
+				<span class=""> <font size="5"> ★ </font></span>
+				<span class=""> <font size="5"> ★ </font></span>
+			</div>
+			
+			<input type="submit" value="Añadir al carrito">
+		  </div>  
+		</div>
+
+		
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		<br/>
+		
+        <h3 style="text-align:center;">¿Quieres saber más de nuestros productos?</h3>
+		<h3 style="text-align:center;">¡Te compartimos un video!</h3>
+	
+		<video width="700" controls>
+			<source src="fashion.mp4" type="video/mp4">
+		</video>
+		
+		
+		<br/>
+		<br/>
+		
+	  
+		<!--Comentarios-->
+        <h3 style="text-align:center;">Compartenos tu opinion!!</h3>
+	    <section>	
+		<div class="container2">
+			<div class="box">
+				<i class="fa fa-comment"></i>
+				<span id="comment-counter">1</span>
+			</div>
+			<div class="box">
+				<input type="text" placeholder="Añadir comentario..." id="comment" style="font-family: 'Playfair Display', serif;">
+				<button id="add-comment">Añadir comentario</button>
+			</div>
+			<section class="comments" id="comments-container" style="display: block;">
+			
+			<!-- Hideeen display: none;-->
+			
+			<div style="display: block;"> 
+			    Tu comentario es importante...
+				<img src = "img/1.png" width="40px" height="40px"/>
+				<span>fecha</span>
+				<i class="fa fa-trash"></i>
+            </div>
+			
+			</section>				
+		</div>
+		
+	   </section>
+	  
+	   
+	   <h3 style="text-align:center;">¿Necesitas ayuda? contactame abby.garza@live.com</h3>
+	   
+	   <br/>
+	   <br/>
+		
+		
+		<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+			var i;
+			var x = document.getElementsByClassName("mySlides");
+			for (i = 0; i < x.length; i++) {
+			   x[i].style.display = "none";  
+			}
+			myIndex++;
+			if (myIndex > x.length) {myIndex = 1}    
+			x[myIndex-1].style.display = "block";  
+			setTimeout(carousel, 9000);    
+		}
+		</script>
+		
+		<!--BOTONES PARA MOVER LAS IMAGENES :p-->
+		<script>
+		var slideIndex = 1;
+		showDivs(slideIndex);
+
+		function plusDivs(n) {
+		  showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  if (n > x.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = x.length}
+		  for (i = 0; i < x.length; i++) {
+			 x[i].style.display = "none";  
+		  }
+		  x[slideIndex-1].style.display = "block";  
+		}
+		</script>
+		
+		<script  src="js/index.js"></script>
+
+</body>
+
+</html>

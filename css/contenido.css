@@ -1,0 +1,49 @@
+.bienvenidos h1 {
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	font-size:50px;
+	margin:10px;
+}
+
+
+p {
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	font-size:40px;
+	margin:10px;
+}
+
+.img1 label {
+	font-family: 'Tinos', serif;
+	font-size:15px;
+}
+
+.title2 
+{
+	text-align: center;
+	font-family: 'Great Vibes', cursive;
+	font-size:40px;
+	margin:10px;
+	color:#D787A4;
+}
+
+
+.img1
+{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.img1 article
+{
+	margin: 15px;
+}
+.img1 p
+{
+	font-family: 'Great Vibes', cursive;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	font-size:40px;
+}
